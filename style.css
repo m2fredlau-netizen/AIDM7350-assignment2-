@@ -1,0 +1,173 @@
+/* Global Styles: Unified Theme (Warm Orange for Cat Theme) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", "Microsoft YaHei", sans-serif;
+}
+
+body {
+    background-color: #f9f7f5;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 40px;
+    line-height: 1.8;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 3px solid #e67e22;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 36px;
+    color: #e67e22;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+.header h1:hover {
+    transform: scale(1.06);
+    color: #e74c3c;
+}
+
+/* Standout */
+.standout {
+    color: #d35400;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Section */
+.section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.section h2 {
+    color: #e67e22;
+    margin-bottom: 15px;
+    border-left: 5px solid #e67e22;
+    padding-left: 10px;
+    transition: all 0.3s ease;
+}
+.section h2:hover {
+    transform: scale(1.05);
+    color: #e74c3c;
+    padding-left: 15px;
+}
+
+.section h3 {
+    color: #d35400;
+    margin: 10px 0;
+    transition: all 0.3s ease;
+}
+.section h3:hover {
+    transform: scale(1.05);
+    color: #f39c12;
+    font-weight: bold;
+}
+
+/* List */
+.feed-list, .item-list {
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.feed-list li {
+    margin: 8px 0;
+    color: #555;
+}
+
+.item-list li {
+    margin: 8px 0;
+    list-style-type: "🐾 ";
+    color: #555;
+}
+
+/* Link */
+a {
+    color: #e67e22;
+    text-decoration: none;
+}
+a:hover {
+    color: #d35400;
+    text-decoration: underline;
+}
+
+/* 你原本的 5 张本地图片样式 & 特效 —— 100% 保留！*/
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.photo-gallery img {
+    height: 200px;
+    width: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* 本地图片个性化样式（保留你原有的类，加交互） */
+.image1:hover{
+    border-radius: 50%;
+}
+.image2:hover
+{
+    border-radius: 30px;
+}
+.image3:hover
+{
+    opacity: 0.1;
+}
+.image4:hover{
+    filter:grayscale(0.5)
+}
+.image5:hover{
+    filter:blur(10px)
+}
+
+/* 鼠标悬停：图片放大+恢复清晰，交互加分 */
+.photo-gallery img:hover {
+    transform: scale(1.05); /* 放大5% */
+    filter: none !important; /* 悬停时恢复清晰 */
+} /* ✅ 修复：补充了缺失的闭合大括号 */
+
+/* 在线图片 */
+.web-photos {
+    display: flex;
+    gap: 20px;
+    margin: 15px 0;
+}
+
+.web-photos img {
+    height: 250px;
+    width: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px #ccc;
+}
+
+/* Video */
+iframe {
+    display: block;
+    margin: 15px auto;
+    border-radius: 8px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #e67e22;
+    margin-top: 30px;
+    color: #777;
+    font-size: 14px;
+}
